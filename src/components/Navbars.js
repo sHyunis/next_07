@@ -77,7 +77,7 @@ const Navbars = () => {
     <div className="flex justify-center p-10">
       <div className="hidden sm:block">
         {navMenus.map((menu) => (
-          <Link href={menu.path} className="p-10">
+          <Link href={menu.path} key={menu.title} className="p-10">
             {menu.title}
           </Link>
         ))}
